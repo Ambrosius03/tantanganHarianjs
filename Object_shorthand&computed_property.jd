@@ -1,0 +1,24 @@
+const nama = "Andi";
+const umur = 22;
+const role = "admin";
+const status = "aktif";
+
+const user = {
+nama,
+umur,
+[role]: true,
+[status]: 'online'
+};
+
+//console.log(user);
+
+
+const buatUser = (nama, umur, role, status) => {
+  return {
+    nama,
+    umur,
+    [role]:true,
+    [status]: 'online'
+  }
+  };
+  console.log(buatUser('andi',22,'programer', 'aktif'));
